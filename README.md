@@ -26,6 +26,9 @@ Use of the cluster is subject to (only a few) arbitrary rules. If you break them
 /opt/miniconda3/bin/conda init --all
 ```
 8. *IMPORTANT* Create a conda environment for your project. *DO NOT* use the `base` environment. This is to ensure clean environments are used for any training runs and that the Python environments don't get bloated.
+```
+conda create -n my_amazing_env_name python=3.7
+```
 
 # TODO (upcoming features):
 
