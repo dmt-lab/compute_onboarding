@@ -16,19 +16,16 @@ Use of the cluster is subject to (only a few) arbitrary rules. If you break them
 
 1. Contact the current admin of the server (alan.dolhasz@bcu.ac.uk) and confirm approval
 2. Generate a public and private key pair (use PuttyGen if on Windows)
-  2.5 Make sure the *private key* is protected by a password
+3. Make sure the *private key* is protected by a password
 
-3. Forward the public key and a chosen username (please keep it identifiable) to the admin and you will receive the IP address 
-4. Once you get approval from admin, set up an SSH connection to the server using the IP address, your private key and your chosen username
-5. Log into the server.
-
-6. Run the following command on the server to initialise Anaconda for your user:
-
+4. Forward the public key and a chosen username (please keep it identifiable) to the admin and you will receive the IP address 
+5. Once you get approval from admin, set up an SSH connection to the server using the IP address, your private key and your chosen username
+6. Log into the server.
+7. Run the following command on the server to initialise Anaconda for your user:
 ```
 /opt/miniconda3/bin/conda init --all
 ```
-
-7. *IMPORTANT* Create a conda environment for your project. *DO NOT* use the `base` environment. This is to ensure clean environments are used for any training runs and that the Python environments don't get bloated.
+8. *IMPORTANT* Create a conda environment for your project. *DO NOT* use the `base` environment. This is to ensure clean environments are used for any training runs and that the Python environments don't get bloated.
 
 # TODO (upcoming features):
 
