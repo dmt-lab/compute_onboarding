@@ -29,6 +29,14 @@ Use of the cluster is subject to (only a few) arbitrary rules. If you break them
 ```
 conda create -n my_amazing_env_name python=3.7
 ```
+9. Activate your environment `conda activate my_amazing_env_name` and proceed as usual (install packages etc). 
+
+**If you want to use Tensorflow, please install it using the following command:**
+```
+conda install tensorflow-gpu
+```
+
+All environments will be private to you and contained within your user folder. Again, please keep the number of environments limited - they bloat in size pretty quickly, especially if each one has a copy of a large DL library like Tf2.
 
 # TODO (upcoming features):
 
